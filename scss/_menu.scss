@@ -2,9 +2,9 @@
 
 .menu-btn{
   position: absolute;
-  z-index: 3;
   top: 35px;
-  left: 1200px;
+  left: 35px;
+  z-index: 3;
   cursor: pointer;
   @include easeOut;
 
@@ -22,8 +22,7 @@
     .btn-line{
       //line-1
       &:nth-child(1){
-        transform: rotate(45deg) translate(5px,4px);
-        
+        transform: rotate(45deg) translate(5px,5px);
       }
       //line-2 -hide
       &:nth-child(2){
@@ -42,7 +41,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show{
@@ -64,7 +62,7 @@
   &-nav{
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5),0.9);
     list-style: none;
     transform: translate3d(0,-100%,0);
     @include easeOut;
@@ -77,7 +75,7 @@
 
   //Branding side
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color,0.9);
     @include easeOut;
     transform: translate3d(0,100%,0);
     &.show{
@@ -88,7 +86,8 @@
     .portrait{
       width: 250px;
       height: 250px;
-      background: url('../img/portrait.jpg');
+      background: url('../img/portrait1.jpg');
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
