@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "https://shrnsubedi.github.io/portfolio-page",
+  "homepage": "https://shrnsubedi.github.io/portfolio-page/index.html",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -11,6 +11,7 @@
   "author": "Shrijan Subedi",
   "license": "ISC",
   "dependencies": {
+    "bulma": "^0.9.0",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
